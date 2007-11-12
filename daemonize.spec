@@ -1,6 +1,6 @@
 Name:		daemonize
 Version:	1.5.1
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	Run a command as a Unix daemon
 Source0:	http://www.clapper.org/software/daemonize/daemonize-%{version}.tar.gz
 Source1:	http://www.clapper.org/software/daemonize/daemonize-%{version}.tar.gz.sig
@@ -45,7 +45,10 @@ true daemon.
 %{__rm} -Rf %{buildroot}
 %{__mkdir_p} %{buildroot}%{_sbindir}
 %{__install} -m 0755 %{name} %{buildroot}%{_sbindir}
+%{__mkdir_p} %{buildroot}%{_mandir}/man1
+%{__install} -m 0755 %{name}.1 %{buildroot}%{_mandir}/man1
 
 %files
 %doc README CHANGELOG LICENSE
 %{_sbindir}/%{name}
+%{_mandir}/man1/%{name}.1*

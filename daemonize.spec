@@ -7,6 +7,7 @@ Source1:	http://www.clapper.org/software/daemonize/daemonize-%{version}.tar.gz.s
 URL:		http://www.clapper.org/software/daemonize/
 License:	BSD
 Group:		System/Servers
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 %description
 daemonize runs a command as a Unix daemon. As defined in W. Richard
 Stevens' 1990 book, Unix Network Programming (Addison-Wesley, 1990), a

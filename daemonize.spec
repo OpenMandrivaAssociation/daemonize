@@ -1,6 +1,6 @@
 Name:		daemonize
-Version:	1.5.2
-Release:	%mkrel 2
+Version:	1.5.6
+Release:	%mkrel 1
 Summary:	Run a command as a Unix daemon
 Source0:	http://www.clapper.org/software/daemonize/daemonize-%{version}.tar.gz
 Source1:	http://www.clapper.org/software/daemonize/daemonize-%{version}.tar.gz.sig

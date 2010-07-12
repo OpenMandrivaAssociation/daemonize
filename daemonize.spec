@@ -1,9 +1,8 @@
 Name:		daemonize
-Version:	1.5.6
+Version:	1.6
 Release:	%mkrel 1
 Summary:	Run a command as a Unix daemon
-Source0:	http://www.clapper.org/software/daemonize/daemonize-%{version}.tar.gz
-Source1:	http://www.clapper.org/software/daemonize/daemonize-%{version}.tar.gz.sig
+Source0:	bmc-%{name}-release-%{version}-0-gf9d8e03.tar.gz
 URL:		http://www.clapper.org/software/daemonize/
 License:	BSD
 Group:		System/Servers
@@ -36,10 +35,10 @@ into a true Unix daemon, you can use daemonize to force it to run as a
 true daemon.
 
 %prep
-%setup -q
+%setup -q -n bmc-%name-f9d8e03
 
 %build
-%configure
+%configure2_5x
 %make
 
 %install
@@ -50,6 +49,6 @@ true daemon.
 %{__install} -m 0755 %{name}.1 %{buildroot}%{_mandir}/man1
 
 %files
-%doc README CHANGELOG LICENSE
+%doc README.md CHANGELOG LICENSE
 %{_sbindir}/%{name}
 %{_mandir}/man1/%{name}.1*

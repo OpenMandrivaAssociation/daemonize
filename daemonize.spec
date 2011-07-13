@@ -1,6 +1,6 @@
 Name:		daemonize
 Version:	1.6
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	Run a command as a Unix daemon
 Source0:	bmc-%{name}-release-%{version}-0-gf9d8e03.tar.gz
 URL:		http://www.clapper.org/software/daemonize/

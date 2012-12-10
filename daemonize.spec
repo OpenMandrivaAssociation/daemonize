@@ -56,3 +56,47 @@ true daemon.
 %doc README.md CHANGELOG.md LICENSE.md
 %{_sbindir}/%{name}
 %{_mandir}/man1/%{name}.1*
+
+
+%changelog
+* Fri Nov 25 2011 Götz Waschk <waschk@mandriva.org> 1.7.3-1mdv2012.0
++ Revision: 733344
+- new version
+- get source from github
+- update file list
+
+* Wed Jul 13 2011 Götz Waschk <waschk@mandriva.org> 1.6-2
++ Revision: 689835
+- rebuild
+
+* Mon Jul 12 2010 Götz Waschk <waschk@mandriva.org> 1.6-1mdv2011.0
++ Revision: 551227
+- new version
+
+* Sat Jul 11 2009 Götz Waschk <waschk@mandriva.org> 1.5.6-1mdv2010.0
++ Revision: 394705
+- update to new version 1.5.6
+
+* Thu Aug 07 2008 Thierry Vignaud <tv@mandriva.org> 1.5.2-2mdv2009.0
++ Revision: 266554
+- rebuild early 2009.0 package (before pixel changes)
+
+* Wed Apr 30 2008 Götz Waschk <waschk@mandriva.org> 1.5.2-1mdv2009.0
++ Revision: 199461
+- new version
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - fix no-buildroot-tag
+
+* Mon Nov 12 2007 Nicolas Vigier <nvigier@mandriva.com> 1.5.1-2mdv2008.1
++ Revision: 108206
+- add manpage
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - convert description from UTF-8 into ASCII
+
+* Mon Nov 12 2007 Nicolas Vigier <nvigier@mandriva.com> 1.5.1-1mdv2008.1
++ Revision: 108127
+- import daemonize
+
+

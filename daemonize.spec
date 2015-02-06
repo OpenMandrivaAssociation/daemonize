@@ -1,7 +1,7 @@
 %define git 8c9856b
 Name:		daemonize
 Version:	1.7.3
-Release:	%mkrel 1
+Release:	2
 Summary:	Run a command as a Unix daemon
 # $UPSTREAM no longer supplies hand made .tar.gz-Files for releases 
 # so a github tarball it is:

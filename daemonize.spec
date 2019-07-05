@@ -6,7 +6,7 @@ Summary:	Run a command as a Unix daemon
 # $UPSTREAM no longer supplies hand made .tar.gz-Files for releases 
 # so a github tarball it is:
 # https://github.com/bmc/daemonize/tarball/release-1.7.3
-Source: https://github.com/bmc/daemonize/archive/release-%{version}.tar.gz
+Source: https://github.com/bmc/daemonize/archive/release-1.7.8/%{name}-release-%{version}.tar.gz
 URL:		http://www.clapper.org/software/daemonize/
 License:	BSD
 Group:		System/Servers

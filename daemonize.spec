@@ -1,12 +1,12 @@
 %define git 8c9856b
 Name:		daemonize
-Version:	1.7.3
-Release:	2
+Version:	1.7.8
+Release:	1
 Summary:	Run a command as a Unix daemon
 # $UPSTREAM no longer supplies hand made .tar.gz-Files for releases 
 # so a github tarball it is:
 # https://github.com/bmc/daemonize/tarball/release-1.7.3
-Source: %name-%version.tar.gz
+Source: https://github.com/bmc/daemonize/archive/release-%{version}.tar.gz
 URL:		http://www.clapper.org/software/daemonize/
 License:	BSD
 Group:		System/Servers
@@ -39,11 +39,11 @@ into a true Unix daemon, you can use daemonize to force it to run as a
 true daemon.
 
 %prep
-%setup -q -n bmc-%name-%git
+%setup -q -n %{name}-release-%{version}
 
 %build
 %configure2_5x
-%make
+%make_build
 
 %install
 %{__rm} -Rf %{buildroot}

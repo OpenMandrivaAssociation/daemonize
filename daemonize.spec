@@ -7,7 +7,7 @@ Summary:	Run a command as a Unix daemon
 # so a github tarball it is:
 # https://github.com/bmc/daemonize/tarball/release-1.7.3
 Source: https://github.com/bmc/daemonize/archive/release-1.7.8/%{name}-release-%{version}.tar.gz
-URL:		http://www.clapper.org/software/daemonize/
+URL:		https://www.clapper.org/software/daemonize/
 License:	BSD
 Group:		System/Servers
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot

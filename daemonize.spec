@@ -11,6 +11,11 @@ URL:		https://www.clapper.org/software/daemonize/
 License:	BSD
 Group:		System/Servers
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 daemonize runs a command as a Unix daemon. As defined in W. Richard
 Stevens' 1990 book, Unix Network Programming (Addison-Wesley, 1990), a
